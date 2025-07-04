@@ -20,6 +20,7 @@ Para poder utilizar debemos crear una carpeta llamada "js" en donde se encuentre
 ```
 
 ### En javaScrip
+```
 function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {  
     const limpiar = (str) => str  
       .toUpperCase()  
@@ -39,7 +40,8 @@ function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {
     const dd = String(fecha.getDate()).padStart(2, '0');  
     const rfcBase = primeraLetra + vocalInterna + inicialM + inicialNombre + yy + mm + dd;  
     const rfc = rfcBase + "XXX";  
-    document.getElementById("resultado").value = rfc;;}  
+    document.getElementById("resultado").value = rfc;;}
+```
 <br/>
  ### Librería en acción:
 ![image](https://github.com/user-attachments/assets/0100c6b0-888f-4b48-ae72-cf4d7bb452a0)
