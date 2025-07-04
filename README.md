@@ -40,7 +40,6 @@ function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {
     document.getElementById("resultado").value = rfc;;}  
 <br/>
  ### Librería en acción:
-
-    ![image](https://github.com/user-attachments/assets/0100c6b0-888f-4b48-ae72-cf4d7bb452a0)
+![image](https://github.com/user-attachments/assets/0100c6b0-888f-4b48-ae72-cf4d7bb452a0)
 
 
