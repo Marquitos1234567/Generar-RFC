@@ -43,7 +43,7 @@ function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {
     document.getElementById("resultado").value = rfc;;}
 ```
 <br/>
- ### Librería en acción:
-![image](https://github.com/user-attachments/assets/0100c6b0-888f-4b48-ae72-cf4d7bb452a0)
+ ### Librería en acción:![Captura de pantalla 2025-07-03 202929](https://github.com/user-attachments/assets/e29d0fdd-2aa3-4dea-b6a6-42661ed72c6a)
+ 
 
 
