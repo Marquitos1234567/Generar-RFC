@@ -5,7 +5,7 @@ Esta librería toma los nombres, apellido paterno, apellido materno y fecha de n
 Para poder utilizar debemos crear una carpeta llamada "js" en donde se encuentre nuestro archivo html, después decargar el archivo RFC.js y guardarlo dentro de la carpeta creada previamente, dentro del archivo html tendremos que colocar la siguiente línea: "<script src="js/RFC.js"></script>", esto puede ser dentro de las etiquetas "head" o "body"
 
 ### _USO_
-### Uso en html
+### En html
 <input type="text" id="Nombre" placeholder="Escribe tu nombre">
 <input type="text" id="ApellidoM" placeholder="Escribe tu apellido materno">
 <input type="text" id="ApellidoP" placeholder="Escribe tu apellido paterno">
@@ -18,28 +18,29 @@ Para poder utilizar debemos crear una carpeta llamada "js" en donde se encuentre
         )">Calcular RFC</button>   
 
 ### En javaScrip
-function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {
-    const limpiar = (str) => str
-      .toUpperCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[^A-ZÑ]/g, "");
-    nombre = limpiar(nombre);
-    apellidoP = limpiar(apellidoP);
-    apellidoM = limpiar(apellidoM);
-    const primeraLetra = apellidoP.charAt(0) || 'X';
-    const vocalInterna = (apellidoP.slice(1).match(/[AEIOU]/) || ['X'])[0];
-    const inicialM = apellidoM.charAt(0) || 'X';
-    const inicialNombre = primerNombre.charAt(0) || 'X';
-    const fecha = new Date(fechaNacimiento);
-    const yy = String(fecha.getFullYear()).slice(-2);
-    const mm = String(fecha.getMonth() + 1).padStart(2, '0');
-    const dd = String(fecha.getDate()).padStart(2, '0');
-    const rfcBase = primeraLetra + vocalInterna + inicialM + inicialNombre + yy + mm + dd;
-    const rfc = rfcBase + "XXX";
-    document.getElementById("resultado").value = rfc;;}
+function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {  
+    const limpiar = (str) => str  
+      .toUpperCase()  
+      .normalize("NFD")  
+      .replace(/[\u0300-\u036f]/g, "")  
+      .replace(/[^A-ZÑ]/g, "");  
+    nombre = limpiar(nombre);  
+    apellidoP = limpiar(apellidoP);  
+    apellidoM = limpiar(apellidoM);  
+    const primeraLetra = apellidoP.charAt(0) || 'X';  
+    const vocalInterna = (apellidoP.slice(1).match(/[AEIOU]/) || ['X'])[0];  
+    const inicialM = apellidoM.charAt(0) || 'X';  
+    const inicialNombre = primerNombre.charAt(0) || 'X';  
+    const fecha = new Date(fechaNacimiento);  
+    const yy = String(fecha.getFullYear()).slice(-2);  
+    const mm = String(fecha.getMonth() + 1).padStart(2, '0');  
+    const dd = String(fecha.getDate()).padStart(2, '0');  
+    const rfcBase = primeraLetra + vocalInterna + inicialM + inicialNombre + yy + mm + dd;  
+    const rfc = rfcBase + "XXX";  
+    document.getElementById("resultado").value = rfc;;}  
+<br/>
+ ### Librería en acción:
 
- Librería en acción:
     ![image](https://github.com/user-attachments/assets/0100c6b0-888f-4b48-ae72-cf4d7bb452a0)
 
 
