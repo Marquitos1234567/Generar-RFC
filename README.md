@@ -42,7 +42,6 @@ function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {
     const rfc = rfcBase + "XXX";  
     document.getElementById("resultado").value = rfc;;}
 ```
-<br/>
  ### Librería en acción:  
  /Captura.png
 
