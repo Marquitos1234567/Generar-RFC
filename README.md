@@ -44,7 +44,6 @@ function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {
 ```
 <br/>
  ### Librería en acción:
- [Captura de pantalla 2025-07-03 202929](https://github.com/user-attachments/assets/e29d0fdd-2aa3-4dea-b6a6-42661ed72c6a)
- 
+
 
 
