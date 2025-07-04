@@ -6,16 +6,16 @@ Para poder utilizar debemos crear una carpeta llamada "js" en donde se encuentre
 
 ### _USO_
 ### En html
-<input type="text" id="Nombre" placeholder="Escribe tu nombre">
-<input type="text" id="ApellidoM" placeholder="Escribe tu apellido materno">
-<input type="text" id="ApellidoP" placeholder="Escribe tu apellido paterno">
-<input type="date" id="Fecha">
-<button onclick="generarRFC(
-            document.getElementById('Nombre').value,
-            document.getElementById('ApellidoP').value,
-            document.getElementById('ApellidoM').value,
-            document.getElementById('Fecha').value
-        )">Calcular RFC</button>   
+<input type="text" id="Nombre" placeholder="Escribe tu nombre">  
+<input type="text" id="ApellidoM" placeholder="Escribe tu apellido materno">  
+<input type="text" id="ApellidoP" placeholder="Escribe tu apellido paterno">  
+<input type="date" id="Fecha">  
+<button onclick="generarRFC(  
+            document.getElementById('Nombre').value,  
+            document.getElementById('ApellidoP').value,  
+            document.getElementById('ApellidoM').value,  
+            document.getElementById('Fecha').value  
+        )">Calcular RFC</button>  
 
 ### En javaScrip
 function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {  
