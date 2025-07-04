@@ -44,7 +44,6 @@ function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {
 ```
 <br/>
  ### Librería en acción:
- captura.img
-
+ captura.png
 
 
