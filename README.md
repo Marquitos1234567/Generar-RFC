@@ -49,8 +49,8 @@ function generarRFC(nombre,apellidoP,apellidoM,fechaNacimiento) {
 
 ```
 Asegurarse de validar que los campos no estén vacíos antes de generar el RFC.
-
-Esta libreria usa "XXX" como homoclave de ejemplo. Puedes complementarlo con un algoritmo oficial si se requiere mayor exactitud. para eso se nececita contar con datos oficiales del SAT
+Esta libreria usa "XXX" como homoclave de ejemplo. Puedes complementarlo con un algoritmo oficial
+si se requiere mayor exactitud. para eso se nececita contar con datos oficiales del SAT
 ```
 
 
